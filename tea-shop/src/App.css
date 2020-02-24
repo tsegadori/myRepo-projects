@@ -1,0 +1,75 @@
+@import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
+
+.top-banner{
+   background-image: url("/bg-whhite.jpg");
+  height: 20%;
+  width: 100%;
+}
+
+.nav-edit{
+  clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;;
+}
+
+.tea{
+  height: 15%;
+  width: 15%;
+  margin-left: 20%;
+}
+.carousel{
+  background-image: url("/bg-pic.jpg");
+  height: 35%;
+  width: 100%;
+}
+
+.form-column{
+  padding: 5%;
+}
+
+.tea-details{
+  margin-top: 10%;
+  height: 9rem;
+  width: 13rem;
+}
+
+.tea-cust{
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+.add-padding{
+  padding-top: 3rem;
+ }
+
+ .footer{
+   width: 100%;
+  background-color: rgb(238, 234, 234);
+ 
+ }
+
+ .footer-line{
+  width: 100%;
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+
+ }
+
+ .social-media{
+    width: 100%;
+    text-align: center;
+   color: "text-muted";
+  }
+
+  .tea-of-day{
+    height: 100%;
+    width: 100%;
+  }
+
+  .social-media-links{
+    padding-right: 1%;
+    height: 30px;
+    width: 45px;
+  }

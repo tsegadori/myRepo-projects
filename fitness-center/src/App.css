@@ -1,0 +1,63 @@
+@import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);
+
+.app-base{
+    background-color: black;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 0%;
+ }
+
+.inner-div{
+    background-color: rgb(209, 204, 204);
+    padding-left: 15%;
+    padding-right: 5%;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-top-color: rgb(201, 191, 191);
+    border-bottom:  rgb(209, 204, 204);
+    border-right:  rgb(209, 204, 204);
+    border-left:  rgb(209, 204, 204);
+
+}
+
+.banner-style{
+    text-align: "right";
+    padding-top: 3%;
+    padding-left: 10%;
+}
+
+.nav-style{
+padding-right: 15%;
+border-style: solid;
+border-width: 0.5rem;
+border-color: rgb(201, 191, 191);
+border-radius: 0.3rem;
+padding-right: 0%;
+margin-right: 10%;
+
+}
+
+.socilmedia-style{
+    float: left;
+    clear: none;
+    padding-top: 1%;
+    
+}
+
+.socilmedia-img-style{
+    width: 15%;
+    height: 30%;
+    padding-right: 5%;
+    border-radius: 50%;
+    
+}
+
+.error-container-style{
+    padding-top: 10%;
+    padding-bottom: 26%;
+    padding-left: 3%;
+    margin: 0%;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www:thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Search-Patient-Information</title>
+</head>
+<body>
+<br>
+<!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+      <br>
+<form th:action="@{/pms/PatientPageForHealthWorks}" th:object="${pp}">
+
+<h2>Search Patient</h2>
+<h3>Enter SSN Number</h3>
+
+<input type="text" th:field="*{patientSSN}" />
+<input type="submit" value="Search"/>
+<p class="alert alert-danger"  th:if="${#fields.hasErrors('patientSSN')}" th:errors="*{patientSSN}"></p>
+ 
+ 
+</form>
+
+</body>
+</html>

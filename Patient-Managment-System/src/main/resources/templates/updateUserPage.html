@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>User Administration</title>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"
+	type="text/javascript"></script>
+   </head>
+   <body>
+      <script type="text/javascript">
+$(document).ready(function(){
+	$('#toshow').hide();
+    $('#showTextArea').click(function(){
+    	 $('#toshow').show()
+      
+    });
+});
+</script>
+<!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+      <br>
+      <h3>The following User's credentials found, Update fields below,</h3>
+      <br/>
+      
+	<form action="#" th:action="@{/admin/updateUserProcessSuccessPage}" th:object="${user}"  method="post">
+    	<p>User Name: <input type="text" th:field="*{username}" /></p>
+		<p>Password: <input type="text" th:field="*{encrytedPassword}" /></p>
+		<p>Enabled: <input type="text" th:field="*{enabled}" /></p>
+		<p>User Role One: <input type="text" th:field="*{roleOne}"/></p>
+		<p>User Role Two: <input type="text" th:field="*{roleTwo}"/></p>
+				    				
+	    <p><input type="submit" value="Submit" /> 
+    </form>
+   </body>
+    
+</html>

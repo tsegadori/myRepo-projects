@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www:thymeleaf.org">
+<head>
+ <title>Patients-Record-System</title>
+</head>
+<body>
+<!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+      <br>
+<h3>Patient-Record-Management</h3>
+<h3>Patients-Page</h3>
+<h4> </h4>
+<br>
+<br>
+<table border=1>
+<tr>
+	<th>Patient Name</th>
+	<th>SSN</th>
+	<th>Procedure</th>
+	<th>Date Undergoes</th>
+	<th>Medications</th>
+	<th>Prescription Date</th>
+	<th>Dose</th>
+	<th>PCP</th>
+</tr> 
+<tr th:each="p: ${patient}">
+		<td th:utext="${p.patientName}"> </td>
+		<td th:utext="${p.patientSSN}"> </td>
+		<td th:utext="${p.procedureName}"> </td>
+		<td th:utext="${p.dateUndergoes}"> </td>
+		<td th:utext="${p.medication}"> </td>
+		<td th:utext="${p.prescribtionDate}"> </td>
+		<td th:utext="${p.dose}"> </td>
+		<td th:utext="${p.pcp}"> </td>
+</tr>
+</table>
+<br>
+
+</body>
+</html>

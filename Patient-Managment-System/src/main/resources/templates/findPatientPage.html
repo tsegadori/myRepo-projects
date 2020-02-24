@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www:thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Search-Patient-Information</title>
+</head>
+<body>
+<br>
+<!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+      <br>
+<form th:action="@{/pms/PatientPage}">
+
+<h2>Search Patient</h2>
+<h3>Enter Insurance Number</h3>
+
+<input type="number" id="pid" name="iid" />
+ <input type="submit" value="Search">
+ 
+</form>
+
+</body>
+</html>

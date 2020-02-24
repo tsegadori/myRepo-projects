@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title th:utext="${title}"></title>
+   </head>
+   
+   <body>
+   
+      <!-- Include _menu.html -->
+      <th:block th:include="/_menu"></th:block>  
+       
+      <h3 > <span th:utext="${message}"></span></h3>
+       <br>
+       <h4>Links: </h4>
+<a href="/pms/officeWorks">Office-Works Section</a>
+<br>
+<br>
+<a href="/pms/physiciansPage">Physicians Section</a>
+
+   </body>
+</html>
