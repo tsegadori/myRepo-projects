@@ -1,0 +1,41 @@
+.container-main{
+    padding-top: 15%;
+    padding-left: 0%;
+    margin-left: 0%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.desc-font{
+    font-size: small;
+}
+
+.div-float-left{
+    float: left;
+}
+
+.div-float-right{
+    float: right;
+}
+
+.collapsible {
+     
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .add-issue-btn{
+    width: 100%;
+}

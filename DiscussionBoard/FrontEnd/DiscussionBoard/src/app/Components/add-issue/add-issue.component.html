@@ -1,0 +1,28 @@
+<div class="container">
+  <div><p style="font-size: larger; font-weight: bold;">New Issue Form:</p></div>
+      <form #newIssueForm="ngForm" (ngSubmit)="submitIssue(newIssueForm.value)">
+        <div  class="form-group" >
+            <label for="title">Title</label>
+              <input type="text" class="form-control" name="title" ngModel/>
+          </div>
+        <div class="form-group" >
+          <label for="description">Description</label>
+          <div><small>Type your question below,</small></div>
+          <textarea class="form-control" name="description" rows="3" ngModel></textarea>
+        </div>   
+        <div class="form-group" >
+          <label for="date">Date</label>
+          <input type="text" class="form-control" name="date"  [ngModel]="date"/>
+        </div>   
+        <div class="form-group no-show">
+          <label for="active">Active</label>
+          <input type="text" class="form-control" name="active" [ngModel]="active"/>
+        </div> 
+          <div  class="form-group" >
+            <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" ngModel/>
+          </div>
+        <button type="submit" [disabled]="!newIssueForm.form.valid" class="btn btn-primary">
+        Submit</button>
+      </form>
+</div>

@@ -1,0 +1,32 @@
+<div>
+  <table class="table" style="font-size: 0.9rem; text-align: center;"
+                  >
+                      <thead >
+                        <tr style="font-size: small;">
+                          <th scope="col">Item description</th>
+                          <th scope="col">Unit price</th>
+                          <th scope="col">No of Items</th>
+                          <th scope="col">Sub-Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor='let item of myCart'>
+                          <td style="font-size: small;">{{item.name}}</td>
+                          <td>{{item.price}}</td>
+                          <td>{{item.noOfItems}}</td>
+                          <td>{{item.subTotal}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+</div>
+<div class="container"> 
+  <hr>
+    <div style="text-align: right; font-size: large; float: right; height: 15rem;">
+      <div>
+          <span><span>Grand total : </span>{{grandTotal | currency: 'USD'}} </span>   
+      </div>
+      <div>
+        <button class="btn btn-warning" (click)="checkOut()">Check-Out</button>
+      </div>
+    </div>
+</div>

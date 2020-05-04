@@ -1,0 +1,162 @@
+<div>
+      <div class="d-sm-none" style="height: 90px; width: 100%;" *ngIf="!showSearch">
+            <div class="d-flex main-search" style="width: 100%;">
+                  <div class="p-2" style="margin-bottom: 11px;">
+                         <input type="text" size="55" class="form-control form-control" placeholder="Search for class..." 
+                         style="width: 100%; font-style: italic; padding-bottom: 0px;">
+                         <a href="#" style="font-size: 0.7rem; color: darkgreen;">advanced search options></a>
+                  </div>
+                  <div class="p-2">
+                         <input type="button" class="btn-success" value="GO>"
+                         style="width: 6rem; height: 36px; border-radius: 0.5rem;">
+                  </div>
+                  <div>
+                  </div>
+             </div>
+      </div>
+<div >
+<div class="d-none d-md-block">
+      <div class="d-flex top-link">
+              <div class="mr-auto p-2 links-padding" style="width: 50%;  z-index: 100;">
+                  <a href="#" class="links-padding case1">HOME</a>
+                  <a href="#" class="links-padding case1">CONTACT US</a>
+              </div>
+              <div class="p-2"  style="z-index: 100;">
+                  <a href="#" ><img class="social-md-img" src="assets/fb-logo.jpg" alt="facebook"></a>
+                  <a href="#" ><img class="social-md-img" src="assets/twtr-logo.jpg" alt="twiter"></a>
+                  <a href="#" ><img class="social-md-img" src="assets/lnkd-logo.jpg" alt="linkedIn"></a>
+                  <a href="#" ><img class="social-md-img" src="assets/youtube-logo.jpg" alt="youtube"></a>
+             </div>
+            </div>
+</div>
+<div style="margin-top: -2rem;">
+<div class="row" style="position: relative; height: 140px; ">
+       <div class="col-3 col-sm-3 col-md-3" >
+          <div>
+            <div style="padding-top: 2rem;">   
+                  <a href="#"><img class="logo-style" src="assets/Nova-logo.jpg"></a>
+            </div>
+            
+          </div>
+      </div>
+      <div class="col-3 col-sm-3 col-md-3 d-md-none d-lg-none d-xl-none"  style="padding-top: 2rem;">
+            <img class="logo-style" src="assets/sub-logo.jpg">
+      </div>
+      <div class="col-6 col-sm-6 col-md-6" >
+            <!-- <img  class="banner-style" src="assets/banner.jpg"> -->
+
+                  <div class="container nowrap">
+                       <div style="margin-bottom: 0px; height: 10px;">
+                             <span class="banner-top font-color" > WELCOME TO</span>
+                        </div>
+                        <div style="position: relative; top: 0px;">
+                             <span class="font-color banner-bottom" >My Workforce</span>
+                        </div>
+                   </div>   
+                 
+      </div>
+ </div>
+
+ <div class="line" style="position: relative; top: -1rem;">
+      <hr class="horz-top">
+      <hr class="grad" style="border-width: 0.32rem;">
+</div>
+</div>
+      <div class="d-none d-sm-block">
+            <div class="d-flex search-style" >
+                 <div class="p-2" style="margin-bottom: 11px;">
+                        <input type="text" placeholder="Search for class..." 
+                        style="font-style: italic;">
+                        <a href="#" style="font-size: 0.7rem; color: darkgreen;">advanced search options></a>
+                 </div>
+                 <div class="p-2" style="position: relative; margin-left: -15px;">
+                        <input type="button" class="btn-success" value="GO>"
+                        style="width: 3rem; border-radius: 0.5rem; margin-right: 0px;"> 
+                 </div>
+                
+            </div>
+      </div>
+            <div class="d-sm-none search-sm-btn" *ngIf="showSearch">
+                  <a type="button" (click)="displaySearch()">
+                        <img style="height: 50px; width: 50px;" src="assets/search-icon.jpg"></a>
+            </div>
+            <div class="d-sm-none search-sm-menu" *ngIf="showSearch">
+                  <a type="button"(click)="exitSearch()" ><img style="height: 50px; width: 50px;" src="assets/menu-icon.jpg"></a>
+            </div>
+            <div class="d-sm-none search-sm-btn" *ngIf="!showSearch" style="top: 5rem; opacity: 0.7;">
+                  <a type="button" (click)="exitSearch()"><img style="height: 50px; width: 50px;" 
+                        src="assets/exit-icon.jpg"></a>
+            </div>
+            <div class="d-sm-none search-sm-menu" *ngIf="!showSearch" style="top: 5rem; opacity: 0.7;">
+                  <a type="button" (click)="exitSearch()"><img style="height: 50px; width: 50px;" 
+                        src="assets/menu-icon.jpg"></a>
+            </div>
+      </div>
+</div>
+ <div>
+      <hr style="border-color: darkgreen; width: 100%; border-style: solid;
+       position: relative; top: -20px; z-index: -1;">
+      <div class="d-flex" style=" margin-top: -40px; margin-bottom:0px; position: relative; z-index: 100;">
+            <div class="p-2">
+                  <span style="color: darkgreen;">You are not logged in.</span>
+            </div>
+            <div class="p-2">
+              <a  href="#" (click)="login()" style="text-decoration: none;">
+                  <img style="height: 25px; width: 25px;" src="assets/login-icon.jpg">
+                  <span class="case2">LOGIN/CREATE ACCOUNT</span>
+              </a>
+            </div>
+            <div class="ml-auto p-2" style="z-index: 100;"> 
+                  <div style="z-index: 100;">
+                      <a href="#" style="text-decoration: none;">
+                        <img style="height: 30px; width: 30px;" src="assets/cart-icon.jpg">
+                        <span class="case2">
+                              VIEW CART ({{cartItems}})</span>
+                        </a>     
+                  </div>
+                
+            </div>
+      </div>
+      <hr style="border-color: darkgreen; width: 100%; border-style: solid; position: relative; 
+      top: -22px; z-index: -1;">
+ </div>    
+ <div class="row">
+      <div class="col-12 col-md-3" style="margin-bottom: 0px;">
+            <div class="dropdown" style="position: relative; top: -35px;">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown1" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  style="text-align: left; border-radius: 0px; background-color: darkgreen;">
+                  <span >Browse</span> 
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                    <a class="dropdown-item dropdown-item:hover" style="height: 1rem; color: white;" href="#">
+                        All Classes<span class="sub-dropdown"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        Programs<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        Student Resources<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        FAQ<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        Search<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        Submit A Course Proposal<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 0.8rem; color: white;" href="#">
+                        Home<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                        <hr style="background-color: white; border-width: 0.1rem;">
+                     <a class="dropdown-item" style="height: 1rem; color: white;" href="/contacts">
+                        Contact Us<span class="sub-dropdown" style="right: 0.5rem;"></span></a>
+                  </div>
+                </div>
+      </div>
+      <div class="col-md-9">
+                  <router-outlet></router-outlet>
+      </div>
+ </div>  
+ 

@@ -1,0 +1,61 @@
+.display-style{
+    float: left;
+   /* display: 'inline-flexbox';
+    width: 10rem;
+    height: 25rem;*/
+    margin: 5%;
+    padding-right: 0%;
+}
+
+.search-style{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.item-name-style{
+    text-align: center; 
+    padding: 5%;
+    font-weight: normal;
+
+}
+
+.cart-style{
+    position: sticky;
+    top: 8%;
+    width: 100%;
+     /* padding-right: 5%;
+    padding-left: 0%; */
+    margin-left: 0%;
+    padding-left: 0%;
+   
+}
+
+.banner-style{
+    position: sticky;
+    top: 12%;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+   }
+
+
+.container{
+    margin-top: 4%;
+    padding-top: 2%;
+
+}
+
+.main-container{
+    margin: 5%;
+    padding-top: 2%;
+    
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+ }
+  
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }

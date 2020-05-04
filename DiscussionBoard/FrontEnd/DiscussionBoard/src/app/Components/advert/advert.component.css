@@ -1,0 +1,12 @@
+.container{
+    border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(204, 198, 198), 
+      rgba(248, 238, 238, 0.911)
+    ) 1 100%;
+    padding: 5%;
+    padding-top: 30%;
+}

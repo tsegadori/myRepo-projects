@@ -1,0 +1,28 @@
+.social-md-img{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+ }
+
+ .footer-main{
+     width: 100%;
+     height: 14rem;
+     background-color: black;
+     
+ }
+
+ .contact-style{
+     color: goldenrod;
+     text-align: center;
+     font-weight: 800;
+     font-size: larger;
+     padding-top: 2rem;
+ }
+
+ .links-style{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+    padding-top: 1rem;
+}

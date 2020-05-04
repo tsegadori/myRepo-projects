@@ -1,0 +1,33 @@
+<div class="container" >  
+  <div class="container desc-font">
+    <table>
+      <thead>
+        <tr >
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let c of commentsOfIssues">
+         <td>
+          <div>
+            <br>
+              <div>{{c.description}}</div>
+              <td><span style="font-size: x-small;">{{c.date }}</span></td> 
+          </div>
+
+        
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div *ngIf="!this.authenticationService.isLoggedIn()" style="font-size: xx-small;">Please log in/sign up to give comment!</div>
+    <div *ngIf="this.authenticationService.isLoggedIn()">
+      <hr>
+       <button (click)="showCommentForm()"
+       style="margin-left: 2%; font-size: x-small;" style="margin-left: 2%; font-size: x-small;">Add Comment</button>
+          <div *ngIf="showForm">
+              <app-comment-form [issueid]="issueId"></app-comment-form>
+          </div>
+      </div>
+   
+  </div>
+</div> 

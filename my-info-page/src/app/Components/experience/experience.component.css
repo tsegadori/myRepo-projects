@@ -1,0 +1,18 @@
+.scrollabletextbox{
+    width: 105%;
+    height: 30rem;
+    overflow: scroll;
+    background-image: url('src\assets\text-bg.jpg');
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding-top: 3%;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition-moz-transform: .15s linear;
+    -o-transition-o-transform: .15s linear;
+    -moz-transition-webkit-transform: .15s linear;
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+}

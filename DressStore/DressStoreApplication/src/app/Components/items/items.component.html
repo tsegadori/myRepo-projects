@@ -1,0 +1,12 @@
+<div class="border display-style" *ngFor='let item of searchedItems'>
+  <div class="zoom">
+          <img [src]=item.imgSrc style="height: auto; width: 100%;"/> 
+          <div class="item-name-style">{{item.name}}</div>
+          <div style="text-align: center;">
+             <button class="btn btn-outline-primary" (click)="addtoCart(item)">
+               <p style="margin-bottom: 0%; color: red">${{item.price}} </p>
+               <span>Add to Cart</span>
+             </button>
+          </div>
+  </div>
+</div>

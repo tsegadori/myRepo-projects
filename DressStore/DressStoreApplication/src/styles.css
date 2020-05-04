@@ -1,0 +1,55 @@
+@import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);
+
+.display-style{
+    float: left;
+   /* display: 'inline-flexbox';*/
+    width: 10rem;
+    height: 25rem;
+    margin: 5%;
+    padding-right: 0%;
+}
+
+.search-style{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.item-name-style{
+    text-align: center; 
+    padding: 5%;
+    font-weight: normal;
+
+}
+
+.cart-style{
+    /*position: fixed;*/
+    top: 2%;
+    width: 30%;
+     /* padding-right: 5%;
+    padding-left: 0%; */
+    margin-left: 0%;
+    padding-left: 0%;
+   
+}
+
+.banner-style{
+    /* position: fixed; */
+    top: 12%;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+   }
+
+
+.container{
+    margin-top: 4%;
+    padding-top: 2%;
+
+}
+
+.main-container{
+    margin: 5%;
+    padding-top: 2%;
+    
+}

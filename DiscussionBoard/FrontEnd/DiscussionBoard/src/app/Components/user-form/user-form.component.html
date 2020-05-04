@@ -1,0 +1,24 @@
+<div>
+      <form #newUserForm="ngForm" (ngSubmit)="onSubmit(newUserForm.value)">
+        <div class="form-group" >
+           <label for="email">User name:</label>
+               <input type="text" placeholder="Email" class="form-control"
+                       name="email" #email="ngModel" ngModel/>
+           <!-- <div *ngIf="!userEmail.valid && userEmail.touched">
+                Email is required!
+          </div> -->
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>     
+                <input type="password" placeholder="Password" required class="form-control"
+                       name="password" #password="ngModel"  ngModel>
+          <!-- <div *ngIf="!userPassword.valid && userPassword.touched">
+                Password is required!
+          </div> -->
+        </div>      
+      
+        <button type="submit" class="btn btn-primary btn-lg">
+          {{signInOrUp}}
+        </button>
+      </form>
+</div>

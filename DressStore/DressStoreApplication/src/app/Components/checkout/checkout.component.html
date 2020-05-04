@@ -1,0 +1,38 @@
+  <div class="container">
+   
+    <div class="main-container">
+      <h5><p>Payment Information</p></h5>
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Total Amount $ </label>
+          {{grandTotal}}
+        </div>
+        <div class="form-group" >
+          <label for="formGroupExampleInput">Credit Card Number</label><br>
+          <input type="text" class="form-control" id="formGroupExampleInput" style="width: 60%;"
+          placeholder="Credit Card #" name="cardNumber"  [(ngModel)]='cardNumber' ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Expiration Month</label><br>
+          <input type="text" class="form-control" id="formGroupExampleInput2" style="width: 40%;"
+           placeholder="Expiration Month" name="expMonth" [(ngModel)]='expMonth' ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Expiration Year</label><br>
+          <input type="text" class="form-control" id="formGroupExampleInput2" style="width: 40%;"
+           placeholder="Expiration Year" name="expYear" [(ngModel)]='expYear' ngModel required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">CVC</label><br>
+          <input type="text" class="form-control" id="formGroupExampleInput2" style="width: 20%;"
+           placeholder="CVC" name="cvc" [(ngModel)]='cvc' ngModel required>
+          <br>
+          <div style="text-align: center; padding-right: 10%;">
+    <button class="btn btn-warning btn-lg" style="width: 10rem;" (click)="chargeCreditCard()">Pay</button>
+  </div>
+       </div>
+      </form>  
+  </div>
+  
+</div>
+  

@@ -1,0 +1,26 @@
+<div class="container">
+  {{issueid}}
+  <form #newUserForm="ngForm" (ngSubmit)="submitComment(newUserForm.value)">
+    
+    <div class="form-group" >
+       <label for="email">Comment box: </label>
+       <textarea class="form-control" name="description" rows="3" ngModel></textarea>
+     </div>   
+     <div class="form-group" >
+      <label for="date">Date</label>
+      <input type="text" class="form-control" name="date"  [ngModel]="date"/>
+    </div>   
+    <div class="form-group" >
+      <label for="active">Active</label>
+      <input type="text" class="form-control" name="active" [ngModel]="active"/>
+    </div> 
+    <fieldset ngModelGroup="issues"> 
+      <div  class="form-group" >
+        <label for="id">Issue ID</label>
+           <input type="text" class="form-control" name="id" [ngModel]="comment.issues.id"/>
+      </div>
+    </fieldset>
+    <button type="submit" [disabled]="!newUserForm.form.valid" class="btn btn-primary">
+    Submit</button>
+  </form>
+</div>

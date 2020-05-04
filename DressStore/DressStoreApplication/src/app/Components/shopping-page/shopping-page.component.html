@@ -1,0 +1,98 @@
+<div class="main-container" >
+  <div class="row"  >
+
+    <div class="col-md-8"  style="padding-left: 0%;">
+  <!-- Search box and button are hidden
+    <div class="container search-style" style="display: none;">
+
+        <input type="search" placeholder="Search Items here" [(ngModel)]="search" name="search" id="search1"
+        (ngModelChange)="searchItem($event)" />
+        <button (click)="searchButton()" name="searchButton">Search</button>
+    </div>
+  -->
+
+      <div class="border display-style" *ngFor='let item of searchedItems'>
+        <div>
+                <img [src]=item.imgSrc style="height: 10%; width: 90%;"/>
+                <div class="item-name-style">{{item.name}}</div>
+                <div style="text-align: center;">
+                   <button class="btn btn-outline-primary" (click)="addtoCart(item)">
+                     <p style="margin-bottom: 0%; color: red">${{item.price}} </p>
+                     <span>Add to Cart</span>
+                   </button>
+                </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" >
+
+        <div class="container cart-style" style="padding-left: 0%; padding-top: 3%;" *ngIf="dataService.isUserLoggedIn()">
+            <!-- <table class="table" style="font-size: 0.9rem; text-align: center;"
+            >
+                <thead >
+                  <tr>
+                    <th scope="col">Item description</th>
+                    <th scope="col">Unit price</th>
+                    <th scope="col">No of Items</th>
+                    <th scope="col">Sub-Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let item of cart'>
+                    <td style="font-size: small;">{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.noOfItems}}</td>
+                    <td>{{item.subTotal}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div style="text-align: right; font-size: large; float: right;">
+                  <div>
+                    <hr>
+                    {{grandTotal | currency: 'USD'}} 
+                  </div>
+                  <div>
+                    <button class="btn btn-warning">Check-Out</button>
+                  </div>
+              </div> -->
+        </div>
+        <div class="container"  *ngIf="!dataService.isUserLoggedIn()">
+                <!-- <div class="banner-style">
+                    <img src="assets\productImages\stephen-curry.jpg" alt="Stephen Curry" >
+                </div> -->
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <!-- <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul> -->
+
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets\productImages\stephen-curry.jpg" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets\productImages\legends.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets\productImages\basketball.jpg">
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                 -->
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+

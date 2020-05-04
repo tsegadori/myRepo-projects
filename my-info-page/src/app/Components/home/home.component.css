@@ -1,0 +1,30 @@
+.left-nav{
+    /* background-color: rgba(247, 244, 244, 0.726); */
+    background-color: rgb(221, 217, 208);
+    width: 100%;
+    height: 100%;
+}
+
+a { 
+    color: inherit; 
+    font-size: small;
+}
+
+.home-style{
+    margin-top: 5%;
+ 
+}
+
+.body-bg-img{
+    position: relative;content: '';
+    /* background-color: rgb(95, 95, 206); */
+    background-image: url('src\assets\main-bg.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 0%;
+    
+   
+}
+

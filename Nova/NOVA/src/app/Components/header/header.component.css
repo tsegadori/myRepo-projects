@@ -1,0 +1,162 @@
+.links-padding{ 
+    font-size: small;
+    font-weight: 600;
+    padding-right: 4%;
+    color: rgb(34, 134, 59);
+    text-decoration: none;
+ }
+
+.social-md-img{
+    height: 23px;
+    width: 23px;
+    padding: 2px;
+ }
+
+.logo-style{
+    width: 80%;
+    height: 80%;
+    padding-left: 0%;
+}
+
+.logo-style{
+    width: 7rem;
+    height: 5rem;
+    padding-left: 0%;
+}
+
+.logo-container{
+    margin-top: 0rem;
+}
+
+.top-link{
+    padding-bottom: 0rem;
+}
+
+.font-color{
+    color: rgb(182, 175, 175);
+}
+
+.banner-top{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.banner-bottom{
+    /* font-size: 100px; */
+    font-size: 6vw;
+    /* font-size: 450%; */
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Times New Roman";
+    /* color: rgb(182, 175, 175); */
+}
+
+.nowrap {
+    white-space: nowrap ;
+    padding-top: 2rem;
+  }
+
+.banner-style{
+    width: 22rem;
+    height: 7rem;
+}
+
+.horz-top{
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border-width: 0.4rem;
+    background-color: rgb(243, 177, 9);
+}
+
+.grad {
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    border-color: rgb(56, 114, 56);
+    box-shadow: inset 0 0px 0px rgba(33, 104, 6, 0.075), 0 0 8px rgba(0, 255, 106, 0.6);     /* background-image: linear-gradient(black,white); */
+  }
+
+  .line{
+    position: relative;
+    top: 6px;
+     }
+ 
+  .search-style{
+      position: absolute;
+      top: 2.5rem;
+      right: 0rem;
+      width: 15rem;
+      height: 3.8rem;
+      border-radius: 0.3rem;
+      border-color: goldenrod;
+      background-color: goldenrod;
+   }
+
+  .main-search{
+     width: 100%;
+    height: 4rem;
+    border-radius: 0.3rem;
+    border-color: goldenrod;
+    background-color: goldenrod;
+  }
+
+  .search-sm-btn{
+    position: absolute;
+    top: 1rem; 
+    right: 7rem;
+    height: 30px;
+    width: 40px;
+    opacity: 0.5;
+  }
+
+ .search-sm-menu{
+    position: absolute;
+    top: 1rem; 
+    right: 3rem;
+    height: 30px;
+    width: 40px;
+    opacity: 0.5;
+  }
+
+ .btn-secondary{
+    background-color: rgb(37, 83, 37);
+     width: 100%;
+ }
+
+ .dropdown-menu{
+    background-color: rgb(37, 83, 37);
+    width: 100%;
+    text-align: left;
+ }
+
+ .dropdown-toggle::after {
+     position: absolute;
+     right: 1rem;
+     top: 1rem;
+  }
+
+ .sub-dropdown{
+    color: white;
+    position: absolute;
+    right: 2rem;
+    top: 0.8rem;
+ }
+
+.dropdown-item:hover{
+    color: rgb(197, 181, 181);
+    background-color: darkgreen;
+}
+
+a.case1:hover{
+    color: rgb(143, 209, 143);
+  }  
+  
+  .case2{
+    color: darkgreen; 
+    font-weight: bold; 
+    font-size: 0.9rem;
+  }  
+
+  .case2:hover{
+   color: rgb(143, 209, 143);
+  }  

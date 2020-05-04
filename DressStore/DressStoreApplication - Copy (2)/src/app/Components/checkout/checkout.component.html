@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    
+            <div class="col-md-6">
+              <div>
+                  <p>Your Cart's total summary,</p>
+              </div>
+                    <table class="table" style="font-size: 0.9rem; text-align: center;">
+                      <thead >
+                        <tr style="font-size: small;">
+                          <th scope="col">Item description</th>
+                          <th scope="col">Unit price</th>
+                          <th scope="col">No of Items</th>
+                          <th scope="col">Sub-Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor='let item of cart'>
+                          <td style="font-size: small;">{{item.name}}</td>
+                          <td>{{item.price}}</td>
+                          <td>{{item.noOfItems}}</td>
+                          <td>{{item.subTotal}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+             </div>
+             <div class="col-md-6">
+
+             </div>
+  </div>
+  <p >
+  <strong>Grand Total: </strong> {{grandTotal}}
+</p>
+
+</div>
