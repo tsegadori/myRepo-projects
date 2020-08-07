@@ -1,0 +1,273 @@
+
+
+.links{
+    clear: none;
+    float: left;
+    list-style: none;
+    margin-right: 0px;
+
+}
+
+.links > a{
+  text-decoration: none;
+}
+
+.region-links{
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    
+}
+
+.region-links-button{
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+#symbol1{
+    width: 90px;
+}
+
+.btn{
+    border-radius: 0%;
+    width: 9rem;
+}
+
+input{
+    height: 2.9rem;
+    margin-right: 2%;
+    width: 12rem;
+}
+
+ .form-inline {
+     
+    padding-top: 2%;
+}
+
+.d-flex{
+    width: 100%;
+    
+}
+
+@media (max-width: 769px) {
+    .show{
+    display: none;
+    }
+    .container-fluid {        
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .user-info{
+        font-size: 0.8rem;
+      }
+      .links > a{
+        font-size: 0.8rem;
+      }
+      .region-links-button{
+        border: none;
+        color: black;
+        background-color: white;
+        font-size: 0.8rem;
+    }
+} 
+
+@media (max-width: 1000px) {
+      .links > a{
+        font-size: 0.8rem;
+      }
+      .region-links-button{
+        border: none;
+        color: black;
+        background-color: white;
+        font-size: 0.8rem;
+    }
+} 
+ 
+
+.logo{
+    position: relative;
+    top: -35px;
+    width: 28vw;
+    /* height: 12vh; */
+}
+
+@media (max-width: 1016px) {
+    input{
+        width: 10rem;
+        height: 2.7rem;
+
+    }
+    .btn-primary{
+        width: 7rem;
+        height: 2.9rem;
+    }
+
+    .user-info{
+        font-size: 0.8rem;
+      }
+}  
+
+.regions-list{
+    padding-left: 10px;
+    text-align: center;
+    /* border: 2px;
+    border-style: solid; */
+    background-color:  white;
+    position: absolute;
+    right: 9rem;
+    opacity: 1;
+    width: 19rem;
+}
+
+.container-fluid {
+    width: 100%;
+   padding-left: 5vw;
+   padding-right: 5vw;
+ }
+
+ .navbar-links{
+    clear: none;
+    float: left;
+    list-style: none;
+    margin-right: 3%;
+    padding-left: 0px;   
+    padding-top: 15px;   
+    padding-bottom: 0px;
+    height: 35px;
+}
+
+.navigate > li > a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: 600;
+    font-size: 16px;
+ }
+
+.nav-container {
+    height: 4rem;
+    background-color:#f8fafc;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+ 
+#search1{
+    margin-top: 10px;
+    margin-right: 0px;
+ }
+
+#btn1 {
+    height: 3rem;
+    width: 8rem;
+    border: 0px;
+    background: url(/search-logo.png);
+    padding: 0px;
+    background-repeat: no-repeat;
+    
+  }
+
+.navigate{
+    padding-left: 0px;
+    margin-bottom: 0px;
+    color: #000;
+}
+
+.btn-custom{
+    background-color: #0078B3;
+}
+
+form > input{
+    border-color: rgba(201, 197, 197, 0.979);
+    border-style: solid;
+    border-width: 2px;
+}
+
+#register-link{
+    font-weight: 700;
+}
+
+@media (min-width: 769px){
+.toggle-menu{
+    display: none;
+}
+.responsive-menu{
+    display: none;
+}
+}
+
+@media (max-width: 769px){
+    .container-fluid {
+    width: 100%;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    }
+}
+.menu-input{
+    width: 45px;
+    height: 45px;
+    
+}
+
+.toggle-menu{
+    width: 100%;
+    height: 4rem;
+    background-color:#f8fafc;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+
+    /* margin-top: 10px;
+    padding-top: 10px; */
+}
+
+ #menu1{
+    position: absolute;
+    right: 10px;   
+    background: url(/mini-menu.png);
+    border-style: none;
+    }
+
+#search2{
+    position: absolute;
+    right: 60px;
+    background: url(/mini-search.png);
+    border-style: none;
+}
+
+.logo-style{
+    margin-left: 20px;
+ }
+
+.responsive-menu{
+    width: 100%;
+    height: 100%;
+    background-color: #0d1c3d;
+}
+
+#mobile-exit{
+    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    color: white;
+    background-color: #0d1c3d;
+}
+
+#mobileSignin{
+    background-color: #0078B3;
+}
+
+.mobile-menu{
+    text-align: center;
+    color: white;
+    font-size:1.3rem;
+    font-weight: 900;
+    padding: 40px;
+}
+
+.mini-lists{
+    padding-bottom: 30px;
+}
